@@ -1,0 +1,84 @@
+.landing-bg {
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.title{
+  font-size: 2.5em;
+}
+
+.menu {
+  width: 30px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 35px;
+  cursor: pointer;
+}
+
+.aside{
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.bubble-1,
+.bubble-2,
+.bubble-3,
+.bubble-4,
+.bubble-5,
+.bubble-6 {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.bubble-1 {
+  animation: burbble 9s infinite
+}
+
+.bubble-2 {
+  animation: burbble 8s infinite
+}
+
+.bubble-3 {
+  animation: burbble 5s infinite
+}
+
+.bubble-4 {
+  animation: burbble 13s infinite
+}
+
+.bubble-5 {
+  animation: burbble 7s infinite
+}
+
+.bubble-6 {
+  animation: burbble 15s infinite
+}
+
+@keyframes burbble {
+  from {
+    transform: translateY(15em);
+  }
+
+  to {
+    transform: translateY(-35em);
+  }
+}
+
+@media(min-width:425px){
+  .title{
+    font-size: 3em;
+  }
+}
+
+@media(min-width:700px){
+  .title{
+    font-size: 5em;
+  }
+}
